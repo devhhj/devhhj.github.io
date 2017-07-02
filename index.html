@@ -8,19 +8,19 @@
     <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="cotainer">
+    <header class="header">
+        <div class="container ssibal">
+            <h1 class="brand"><a href="#" class="ssi">Home</a></h1>
             <ul>
-              <li><a href="#" style="padding : 18.5px 0px"><h1 style="margin : 0">Home</h1></a></li>
-              <li style="float:right"><a href="#">News</a></li>
-              <li style="float:right"><a href="#">Contact</a></li>
-              <li style="float:right"><a href="#">About</a></li>
+              <li class="bal"><a href="#">News</a></li>
+              <li class="bal"><a href="#">Contact</a></li>
+              <li class="bal"><a href="#">About</a></li>
             </ul>
         </div>
     </header>
         
     <section class="first">
-        <div class="cotainer">
+        <div class="container">
             <h2 id="first-title">LikeLion</h2>
             <p id="first-para">천안 보카톤</p>
             <button class="button" onclick="button_click();">jquery</button>
@@ -28,27 +28,33 @@
     </section>
     
     <section class="second">
-        <div class="cotainer">
+        <div class="container">
             <article class="work">
-                <img/>
-                <div align="center"><p>허혜웅</p>
+                <img src="/img/img1.jpg">
+                <div align="center">
+                    <p>이름 : 허혜웅</p>
+                    <p>학과 : 컴퓨터공학부</p>
                 </div>
             </article>
             <article class="work">
-                <img/>
-                <div align="center"><p>김통일</p>
+                <img src="/img/img2.jpg">
+                <div align="center">
+                    <p>이름 : 김통일</p>
+                    <p>학과 : 컴퓨터공학부</p>
                 </div>
             </article>
             <article class="work">
-                <img/>
-                 <div align="center"><p>한현진</p>
+                <img src="img/img3.jpg">
+                 <div align="center">
+                    <p>이름 : 한현진</p>
+                    <p>학과 : 컴퓨터공학부</p>
                  </div>
             </article>
          </div>
     </section>
     
     <footer class="footer">
-        <div class="cotainer">
+        <div class="container">
             <h5>2017-07-02 복커톤 4조</h5>
         </div>
     </footer>
@@ -60,3 +66,17 @@
         alert("감사합니다.");
     }
 </script>
+<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.ssibal' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.ssibal' ).addClass( 'jbFixed' );
+          }
+          else {
+            $( '.ssibal' ).removeClass( 'jbFixed' );
+          }
+        });
+      } );
+    </script> -->
