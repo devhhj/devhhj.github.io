@@ -1,0 +1,119 @@
+body {
+    margin : 0px;
+    padding : 0px;
+}
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    text-align:center;
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 29.5px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+.first {
+    width: 100%;
+    height : 600px;
+    background-image: url('../img/lion.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+#first-title {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#first-para {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+
+.second {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 400px;
+    padding-left:25px;
+}
+
+.container {
+    width: 960px;
+}
+
+.button {
+    background-color: #ffc579; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+ background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: linear-gradient(to bottom, #ffc579, #fb9d23);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+   
+   
+   border-radius: 50%;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+.work {
+    border: 1px 
+    solid gold;
+    float: left;
+    width: 30%;
+    padding:10px;
+    text-align: center; 
+}
+
+.work > img {
+    height: 300px;
+    width: 200px;
+}
+
+.work > div > p {
+    
+    width: 200px;
+    border: 1px 
+    solid gold;
+}
+
+.footer{
+    background-color:black;
+    text-align:center;
+    padding:20px;
+    color:white;
+}
